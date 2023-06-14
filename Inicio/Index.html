@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,45 +7,114 @@
     <link rel="stylesheet" href= "IndexStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,800;1,300;1,700&display=swap" rel="stylesheet">
     <title> QH - QUALITY HARDWARE</title>
 </head>
 <body>
     <header>
-        <div id="head_principal">
-            <img src="../Inicio/imgs/Logo.jpg" alt="logo" id="logo">
-            <input type="search" name="buscador" title="Buscar" id="search_bar">
-        </div>
-        <nav id="nav_menu">
-            <a calss= "categorias" href="../Empresa/Empresa.html">EMPRESA</a>  
-            <a calss= "categorias" href="../Productos/Productos.html">PRODUCTOS</a>
-            <a calss= "categorias" href="../Contacto/Contacto.html">CONTACTO</a>
-            <button id="button_register"><a href="../Registro/Form.html">REGISTRO</a></button>
-            <button><a href="../Cuenta/MiCuenta.html">MI CUENTA</a></button>
+        <nav class="nav-menu">
+                <a href="../Inicio/Index.html" class="logo"></a>
+            <div class="cat-container">
+                <a class="categorias" href="../Productos/Productos.html">PRODUCTOS</a>
+                <a class="categorias" href="../Productos/ArmarPc.html">ARMA TU PC</a>
+                <a class="categorias" href="../Productos/Ayuda.html">AYUDA</a>
+                <a class="categorias" href="../Contacto/Contacto.html">CONTACTO</a>
+            </div>
         </nav>
+        <div class="head-sec">
+            <input type="search" name="buscador" placeholder="Buscar..." class="search-bar">
+        </div>
     </header>
-    <section id="ofer_section">
-        <h2><strong>OFERTAS</storng></h2>
+    <section class="main">
+        <article class="bienvenida">
+            <h1>¡Bienvenido a QUALITY HARDWARE!</h1>
+            <p>Aquí encontrarás cientos de producos gamers, al mejor precio, para disfrutar de tus juegos como más te guste ¡Comencemos!<br><button>Crear Cuenta</button><br><a href="../Cuenta/Acceso.html">¿Ya tienes una cuenta? Accede aquí</a></p>
+        </article>
     </section>
-    <section id="prod_section">
-        <h2>Productos</h2>
-        <ol>
-            <li class="links">Procesadores</li>
-            <li class="links">Mothers</li>
-            <li class="links">Tarjetas gráficas</li>
-            <li class="links">Memorias RAM</li>
-            <li class="links">Almacenamiento</li>
-            <li class="links">Fuentes de alimentación</li>
-            <li class="links">Gabinetes</li>
-            <li class="links">Periféricos</li>
-        </ol>
+    <section class="destacados">
+        <h2>Nuestros Destacados</h2>
+        <article class="destacados-container">
+            <a href="#" class="productos-destacados">
+                <img src="../Inicio/imgs/Procesador.jpg" alt="procesador">
+                <div class="descripcion">
+                    <h4>Título del producto</h4>
+                    <p>Descripción del producto</p>
+                    <h5 >9999$</h5>
+                </div>
+            </a>
+            <a href="#" class="productos-destacados">
+                <img src="../Inicio/imgs/Placa de video.jpg" alt="gráfica">
+                <div class="descripcion">
+                    <h4>Título del producto</h4>
+                    <p>Descripción del producto</p>
+                    <h5 >9999$</h5>
+                </div>
+            </a>
+            <a href="#" class="productos-destacados">
+                <img src="../Inicio/imgs/Fuente de poder.jpg" alt="fuente">
+                <div class="descripcion">
+                    <h4>Título del producto</h4>
+                    <p>Descripción del producto</p>
+                    <h5 >9999$</h5>
+                </div>
+            </a>
+        </article>
+    </section>   
+    <section class="productos">
+        <h2>¿Qué estas buscando?</h2>
+        <article class="links-container">
+            <a href="" class="prod-links"><img src="../Inicio/imgs/Componentes.jpg" alt="componentes"><p>Componentes</p></a>
+            <a href="" class="prod-links"><img src="../Inicio/imgs/Perifericos.jpg" alt="perifericos"><p>Periféricos</p></a>
+            <a href="" class="prod-links"><img src="../Inicio/imgs/Equipos.jpg" alt="equipos armados"><p>Equipos</p></a>
+            <a href="" class="prod-links"><img src="../Inicio/imgs/Laptops.jpg" alt="laptops"><p>Laptops</p></a>
+            <a href="" class="prod-links"><img src="../Inicio/imgs/Pantallas.jpg" alt="pantallas"><p>Pantallas</p></a>
+            <a href="" class="prod-links"><img src="../Inicio/imgs/Conectividad.jpg" alt="conectividad"><p>Conectividad</p></a>
+            <a href="" class="prod-links"><img src="../Inicio/imgs/Sillas.jpg" alt="sillas"><p>Sillas</p></a>
+            <a href="" class="prod-links"><img src="../Inicio/imgs/Otros.jpg" alt="otros"><p>Otros</p></a>
+        </article>
     </section>
-    <section id="des_section">
-        <h3><mark>Destacados</mark></h3>
-        <img src="../Inicio/imgs/Placa de video.jpg" alt="placa de video" class="productos">
-        <img src="../Inicio/imgs/Gabinete.jpg" alt="gabinete" class="productos">
-        <img src="../Inicio/imgs/Procesador.jpg" alt="procesador" class="productos">
-    </section>    
-    <footer></footer>
+    <section class="atajos">
+        <h2>¡Hecho a tu medida!</h2>
+        <article class="atajos-container">
+                <a href="" class="links-atajos">
+                    <h3>ARMÁ TU PC</h3>
+                    <p>Elegí, paso a paso, los componentes para tu computadora de escritorio.</p>
+                </a>
+                <a href="" class="links-atajos">
+                    <h3>EQUIPOS ARMADOS</h3>
+                    <p>Explorá nuestra galeria de nueestros equipos preensamblados.</p>
+                </a>
+                <a href="" class="links-atajos">
+                    <h3>ARMÁ TU COMBO</h3>
+                    <p>Selecciona los porductos que desees y armá tu combo único.</p>
+                </a>
+        </article>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <h3>Nuestras Redes</h3>
+            <ul>
+                <li><a href="#">@InstagramExample</a></li>
+                <li><a href="#">@FacebookExample</a></li>
+                <li><a href="#">@TwitterExample</a></li>
+            </ul>
+        </div>
+        <div class="footer-container">
+            <h3>Explorá</h3>
+            <ul>
+                <li><a href="../Productos/Productos.html">PRODUCTOS</a></li>
+                <li><a href="../Productos/ArmarPc.html">ARMA TU PC</a></li>
+                <li><a href="#">EQUIPOS ARMADOS</a></li>  
+            </ul>
+        </div>
+        <div class="footer-container">
+            <h3><a href="../Productos/Ayuda.html">Ayuda</a></h3>
+            <ul>
+                <li><a href="../Contacto/Contacto.html">CONTACTO</a></li>
+                <li><a href="../Empresa/Empresa.html">EMPRESA</a></li>
+                <li><a href="#">infoexample@gmail.com</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
